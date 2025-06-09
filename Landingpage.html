@@ -1,23 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work Book</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WorkBook</title>
+  <link rel="stylesheet" href="css/Lpage.css">
 </head>
-<body>
-    <header>
-        <h2 class="logo"><ion-icon name="book-outline"></ion-icon>  Work Book</h2>
-        <nav class="navigation">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Services</a>
-            <a href="">Contact</a>
-        </nav>
-        <a href="Login.html"><button class="Loginbtn">Login</button></a>
-    </header>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<body class="scroll-smooth">
+  <header>
+    <h2 class="logo"><ion-icon name="book-outline"></ion-icon> WorkBook</h2>
+    <nav class="navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="Login.html"><button class="Loginbtn">Login</button></a>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-title">A Smarter Way to Learn Together</h1>
+      <p class="hero-description">WorkBook is a web-based platform built for seamless and secure academic communication. Forget scattered group chats and email chains — connect, collaborate, and stay focused in one place.</p>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="mouse-icon">
+        <div class="mouse-dot"></div>
+      </div>
+      <p class="scroll-text">Scroll to explore</p>
+    </div>
+  </section>
+
+  <!-- About / Call to Action -->
+  <section id="about" class="cta-section">
+    <div class="cta-content">
+      <h2 class="cta-title">Built for Students and Educators <span id="typewriter" class="typewriter">to Collaborate Better</span></h2>
+      <p class="cta-description">WorkBook simplifies academic interactions by creating a dedicated space for classroom communication, assignment sharing, and project collaboration. No distractions, just focused engagement.
+        Students and teachers can join group chats, share documents and images, and connect in real-time — all in one platform made for education.
+      </p>
+      <div class="cta-buttons">
+        <a href="SignUp.html" class="btn-primary">Get Started</a>
+        <a href="#features" class="btn-secondary">See How It Works</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="events-section">
+    <div class="events-container">
+      <h2 class="events-title">Core Features</h2>
+      <div class="events-grid">
+
+        <div class="event-card">
+          <img src="css/Images/img5.png" alt="Chat Feature" class="event-image">
+          <div class="event-content">
+            <h3 class="event-title">Real-Time Group Chat</h3>
+            <p class="event-description">Engage in focused academic discussions with your class or project group. No more noisy or off-topic group chats.</p>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <ion-icon name="documents"></ion-icon>
+          <div class="event-content">
+            <h3 class="event-title">Document & Media Sharing</h3>
+            <p class="event-description">Easily share notes, PDFs, assignments, or images within your group space. Organized and always accessible.</p>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <ion-icon name="notifications"></ion-icon>
+          <div class="event-content">
+            <h3 class="event-title">Stay Notified</h3>
+            <p class="event-description">Never miss an update. WorkBook keeps you in the loop with smart notifications for messages and shared materials.</p>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <img src="images/interface.jpg" alt="User Interface" class="event-image">
+          <div class="event-content">
+            <h3 class="event-title">Simple, Clean Interface</h3>
+            <p class="event-description">No clutter, no confusion. Just an intuitive layout built for productivity and academic focus.</p>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <img src="images/security.jpg" alt="Security" class="event-image">
+          <div class="event-content">
+            <h3 class="event-title">Safe & Secure</h3>
+            <p class="event-description">Your academic data is protected. We prioritize security and privacy so you can focus on learning.</p>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <img src="css/Images/img 6.png" alt="Integration" class="event-image">
+          <div class="event-content">
+            <h3 class="event-title">Made for Education</h3>
+            <p class="event-description">WorkBook is designed specifically for school and university use. It’s not just another chat app — it’s your digital classroom assistant.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="view-more-container">
+      <a href="#contact" class="btn-view-more">Want to learn more?</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <p class="footer-text">© 2025 WorkBook. All rights reserved.</p>
+      <p class="footer-links">
+        <a href="#" class="footer-link">Privacy Policy</a> |
+        <a href="#" class="footer-link">Terms of Service</a>
+      </p>
+    </div>
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
