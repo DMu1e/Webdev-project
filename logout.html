@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Logging Out - Work Book</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f4f4f4;
+      font-family: 'Poppins', sans-serif;
+    }
+    .logout-container {
+      background-color: white;
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .logout-container h2 {
+      color: #1a2d3f;
+      margin-bottom: 20px;
+    }
+    .logout-container p {
+      font-size: 1rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="logout-container">
+    <h2>Logging you out...</h2>
+    <p>You’ll be redirected shortly.</p>
+  </div>
+
+  <script>
+    // Clear login session
+    localStorage.removeItem("workbookUsername");
+
+    // Redirect to login page after 2 seconds
+    setTimeout(() => {
+      window.location.href = "login.html";
+    }, 2000);
+  </script>
+</body>
+</html>
